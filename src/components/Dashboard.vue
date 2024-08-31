@@ -121,6 +121,8 @@
       </template>
     </q-table>
     
+
+    <!-- Map Modal -->
     <div v-if="icon" class="modal-overlay">
       <div class="modal-content text-center">
         <iframe
@@ -182,18 +184,10 @@ const countries = computed(() => rawCountries.value.map(formatCountryData));
 
 const rows = computed(() => countries.value);
 
-// watchEffect(() => {
-//   if (countries.value.length > 0) {
-//     console.log("Formatted countries:", countries.value);
-//   }
-// });
 
 const openModal = (country) => {
-  // console.log('fired');
   icon.value = true;
   currentMapUrl.value=country
-  // console.log(icon.value);
-  // debugger;
 };
 
 
@@ -242,15 +236,7 @@ function wrapCsvValue (val, formatFn, row) {
   formatted = formatted === void 0 || formatted === null
     ? ''
     : String(formatted)
-
   formatted = formatted.split('"').join('""')
-  /**
-   * Excel accepts \n and \r in strings, but some other CSV parsers do not
-   * Uncomment the next two lines to escape new lines
-   */
-  // .split('\n').join('\\n')
-  // .split('\r').join('\\r')
-
   return `"${formatted}"`
 }
 
