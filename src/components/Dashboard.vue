@@ -66,9 +66,9 @@
         </q-tr>
         <q-tr v-show="props.expand" :props="props">
           <q-td colspan="100%">
-            <div class="row justify-center" style="height: 150px">
+            <div class="row justify-center" style="height: 200px">
               <div
-                class="col-12 col-md-3 col-sm-12 text-center rounded-borders"
+                class="col-12 col-md-6 col-sm-12 text-center rounded-borders"
               >
                 <p class="text-weight-bold text-subtitle1">
                   Sub Region:
@@ -78,7 +78,7 @@
                 </p>
               </div>
               <div
-                class="col-12 col-md-3 col-sm-12 text-center rounded-borders"
+                class="col-12 col-md-6 col-sm-12 text-center rounded-borders"
               >
                 <p class="text-weight-bold text-subtitle1">
                   Official name:
@@ -88,7 +88,7 @@
                 </p>
               </div>
               <div
-                class="col-12 col-md-3 col-sm-12 text-center rounded-borders"
+                class="col-12 col-md-6 col-sm-12 text-center rounded-borders"
               >
                 <p class="text-weight-bold text-subtitle1">
                   UN Membership:
@@ -96,7 +96,7 @@
                 </p>
               </div>
               <div
-                class="col-12 col-md-3 col-sm-12 text-center rounded-borders"
+                class="col-12 col-md-6 col-sm-12 text-center rounded-borders"
               >
                 <p class="text-weight-bold text-subtitle1">
                   Border Countries:
@@ -106,7 +106,7 @@
                 </p>
               </div>
               <div
-                class="col-12 col-md-3 col-sm-12 text-center rounded-borders"
+                class="col-12 col-md-6 col-sm-12 text-center rounded-borders"
               >
                 <q-btn
                   label="Map"
