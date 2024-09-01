@@ -145,7 +145,6 @@
 <script setup>
 import { ref, onMounted, computed, watchEffect } from "vue";
 import { exportFile, useQuasar } from 'quasar'
-// import.meta.env.VITE_GOOGLE_MAP_API_KEY
 
 const rawCountries = ref([]);
 const loading = ref(true);
@@ -259,7 +258,6 @@ function exportTable () {
   )
 
   if (status !== true) {
-    // Assuming you're using Quasar's notify plugin
     Quasar.Notify.create({
       message: 'Browser denied file download...',
       color: 'negative',
